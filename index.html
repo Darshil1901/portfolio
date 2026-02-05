@@ -3,98 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Darshil Dhruv | Portfolio</title>
+<title>Darshil Dhruv | Data Scientist</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#111827;
-    color:#ffffff;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f4f7fa;color:#222;scroll-behavior:smooth}
+section{padding:90px 20px;text-align:center}
 .hero{
-    text-align:center;
-    padding:120px 20px;
-    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    padding:130px 20px;
 }
-h1{font-size:60px;margin:0;}
-h2{color:#38bdf8;}
-p{max-width:900px;margin:20px auto;line-height:1.8;}
+.hero h1{font-size:58px}
+.hero p{max-width:850px;margin:25px auto;line-height:1.8}
 .btn{
-    padding:12px 25px;
+    padding:12px 28px;
     border-radius:6px;
     text-decoration:none;
     margin:10px;
     display:inline-block;
     color:white;
+    font-weight:600;
 }
-.btn-resume{background:#f59e0b;}
-.btn-project{background:#2563eb;}
+.btn-resume{background:#ff9800}
+.btn-project{background:#2196f3}
 .social a{
     margin:0 10px;
     font-size:24px;
     color:white;
 }
-.section{
-    padding:80px 20px;
-    text-align:center;
-}
+.title{font-size:36px;margin-bottom:40px;color:#0f2027}
 .card{
-    background:#1f2937;
-    padding:25px;
+    background:white;
+    max-width:900px;
     margin:20px auto;
-    max-width:800px;
-    border-radius:8px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    text-align:left;
 }
 footer{
-    text-align:center;
+    background:#0f2027;
+    color:white;
     padding:30px;
-    background:#0f172a;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
+<!-- HERO -->
+<section class="hero">
     <h1>Darshil Dhruv</h1>
     <h3>Data Scientist • Gen AI Engineer • Automation Expert</h3>
+
+    <p>
+        I build AI systems, machine learning models and automation workflows that solve real-world problems using Python, ML, GenAI and Data Engineering.
+    </p>
 
     <a href="assets/resume/Darshil_Dhruv_Resume.pdf" target="_blank" class="btn btn-resume">Download Resume</a>
     <a href="#projects" class="btn btn-project">View Projects</a>
 
     <div class="social">
-        <a href="https://www.linkedin.com/in/darshil-dhruv-3ab6552bb" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/darshil-dhruv-3ab6552bb" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
-</div>
+</section>
 
-<div class="section">
-    <h2>Experience</h2>
+<!-- EXPERIENCE -->
+<section>
+    <h2 class="title">Professional Experience</h2>
 
     <div class="card">
-        Academic Consultant — KCG Gujarat<br>
-        Teaching Python, AI, ML to non-tech students.
+        <h3>Academic Consultant — KCG Gujarat</h3>
+        <p>Teaching Python, AI and ML to non-technical students and faculty across Gujarat colleges. Designed project-based learning modules.</p>
     </div>
 
     <div class="card">
-        Junior Data Analyst — Devoted Infotech<br>
-        n8n, APIs, ML forecasting, dashboards.
+        <h3>Junior Data Analyst — Devoted Infotech</h3>
+        <p>Automating workflows using n8n, APIs, ML forecasting models, dashboards and SQL pipelines.</p>
     </div>
-</div>
 
-<div class="section" id="projects">
-    <h2>Projects</h2>
+    <div class="card">
+        <h3>Intern Data Scientist — Deetsdigital</h3>
+        <p>EDA, visualization and ML model optimization using Python and SQL.</p>
+    </div>
+</section>
 
-    <div class="card">DriveGuard AI — YOLOv8 Driver Safety</div>
-    <div class="card">Generative AI Resume Builder — OpenAI + Streamlit</div>
-    <div class="card">Cancer Detection — Random Forest & CNN</div>
-</div>
+<!-- PROJECTS -->
+<section id="projects" style="background:#ffffff">
+    <h2 class="title">AI & ML Projects</h2>
 
+    <div class="card">
+        <h3>DriveGuard AI — Intelligent Driver Safety</h3>
+        <p>YOLOv8, OpenCV and CNN detecting drowsiness (90%), seatbelt (95%), phone usage (92%).</p>
+    </div>
+
+    <div class="card">
+        <h3>Generative AI Resume Builder</h3>
+        <p>OpenAI API + Streamlit creating job-specific resumes using prompt engineering.</p>
+    </div>
+
+    <div class="card">
+        <h3>Cancer Detection using Machine Learning</h3>
+        <p>Random Forest (92%) and CNN (95%) for early cancer diagnosis.</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2 class="title">Technical Skills</h2>
+    <div class="card">
+        Python, SQL, n8n, Airflow, Pandas, NumPy, Power BI, Tableau, Machine Learning,
+        CNN, YOLOv8, OpenAI API, Prompt Engineering, Git, MySQL, PostgreSQL
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    © 2025 Darshil Dhruv
+    © 2026 Darshil Dhruv • Ahmedabad, India
 </footer>
 
 </body>
