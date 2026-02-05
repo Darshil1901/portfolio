@@ -1,100 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Darshil Dhruv | Data Scientist & Gen AI Engineer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darshil Dhruv | Data Scientist</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#222;
+    scroll-behavior:smooth;
+}
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+.hero{
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    padding:120px 20px;
+}
+h1{font-size:58px;margin:0;}
+h2{color:#0f2027;margin-bottom:30px;}
+p{max-width:900px;margin:20px auto;line-height:1.8;}
+.btn{
+    padding:12px 25px;
+    border-radius:6px;
+    text-decoration:none;
+    display:inline-block;
+    margin:10px;
+    color:white;
+}
+.btn-resume{background:#ff9800;}
+.btn-project{background:#2196f3;}
+.social-icons a{
+    margin:0 10px;
+    font-size:24px;
+    color:white;
+}
+.projects{
+    background:white;
+}
+.card{
+    background:#ffffff;
+    padding:25px;
+    margin:20px auto;
+    max-width:800px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+footer{
+    background:#0f2027;
+    color:white;
+    padding:30px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- HERO -->
-<section style="background: linear-gradient(120deg,#0f2027,#203a43,#2c5364); padding:140px 0; color:white; text-align:center;">
-<div class="container">
-<h1 style="font-size:58px;">Hi, I’m <span style="color:#00e0ff;">Darshil Dhruv</span></h1>
-<h3>Data Scientist • Gen AI Engineer • Automation Expert</h3>
-<p style="max-width:900px;margin:30px auto;font-size:18px;line-height:1.8;">
-I build AI systems, ML models, automations and data-driven applications that solve real-world problems using Python, Machine Learning, GenAI and Data Engineering.
-</p>
-<a href="#projects" class="btn btn-light">View Projects</a>
-<a href="assets/resume/Darshil_Dhruv_Resume.pdf" target="_blank" class="btn btn-info">Download Resume</a>
-</div>
+<section class="hero">
+    <h1>Darshil Dhruv</h1>
+    <h3>Data Scientist • Gen AI Engineer • Automation Expert</h3>
+
+    <p>
+        I build AI systems, ML models, automations and data-driven solutions that solve real-world problems.
+    </p>
+
+    <a href="assets/resume/Darshil_Dhruv_Resume.pdf" target="_blank" class="btn btn-resume">
+        Download Resume
+    </a>
+
+    <a href="#projects" class="btn btn-project">
+        View Projects
+    </a>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/darshil-dhruv-3ab6552bb" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
 </section>
+
 <!-- EXPERIENCE -->
-<section class="container" style="padding:80px 0;">
-<h2 class="text-center">Professional Experience</h2>
+<section>
+    <h2>Professional Experience</h2>
 
-<h4>Academic Consultant – KCG Gujarat (Jan 2025 – Present)</h4>
-<p>
-Conducting training on Python, AI, ML for non-technical students and faculty. Worked with Gujarat Commerce College (Ellis Bridge),
-Government Commerce College (Naroda) and more. Designed project-based AI learning modules.
-</p>
+    <div class="card">
+        <h3>Academic Consultant — KCG Gujarat</h3>
+        <p>Teaching Python, AI, ML to non-technical students and faculty across Gujarat colleges. Designed project-based learning modules.</p>
+    </div>
 
-<h4>Junior Data Analyst – Devoted Infotech (Jan 2025 – Present)</h4>
-<p>Automating workflows using n8n, APIs, ML forecasting models, dashboards and SQL pipelines.</p>
+    <div class="card">
+        <h3>Junior Data Analyst — Devoted Infotech</h3>
+        <p>Automating workflows using n8n, APIs, ML forecasting models, dashboards and SQL pipelines.</p>
+    </div>
 
-<h4>Intern Data Scientist – Deetsdigital (Oct 2024 – Dec 2024)</h4>
-<p>EDA, visualization, ML model optimization using Python & SQL.</p>
-
-<h4>Data Scientist Trainee – Fly The Nest (Mar 2024 – Dec 2024)</h4>
-<p>Worked on ML, NLP, LLMs, clustering, regression and AI model building.</p>
+    <div class="card">
+        <h3>Intern Data Scientist — Deetsdigital</h3>
+        <p>EDA, visualization, ML model optimization using Python & SQL.</p>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" style="background:#f7f7f7;padding:80px 0;">
-<div class="container">
-<h2 class="text-center">AI & ML Projects</h2>
+<section id="projects" class="projects">
+    <h2>AI & ML Projects</h2>
 
-<h4>DriveGuard AI – Intelligent Driver Safety System</h4>
-<p>YOLOv8, OpenCV, CNN detecting drowsiness (90%), seatbelt (95%), phone usage (92%).</p>
+    <div class="card">
+        <h3>DriveGuard AI — Intelligent Driver Safety</h3>
+        <p>YOLOv8, OpenCV, CNN detecting drowsiness (90%), seatbelt (95%), phone usage (92%).</p>
+    </div>
 
-<h4>Generative AI Resume Builder</h4>
-<p>OpenAI API + Streamlit app creating job-specific resumes using prompt engineering.</p>
+    <div class="card">
+        <h3>Generative AI Resume Builder</h3>
+        <p>OpenAI API + Streamlit creating job-specific resumes using prompt engineering.</p>
+    </div>
 
-<h4>Cancer Detection using Machine Learning</h4>
-<p>Random Forest (92%) and CNN (95%) model for early cancer diagnosis.</p>
-
-</div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="container" style="padding:80px 0;">
-<h2 class="text-center">Certifications</h2>
-<ul style="font-size:18px;line-height:2;">
-<li>Advanced Learning Algorithms – DeepLearning.AI (Mar 2025)</li>
-<li>Supervised Machine Learning – DeepLearning.AI (Feb 2025)</li>
-<li>Career Essentials in Business Analysis – Microsoft & LinkedIn (Aug 2024)</li>
-<li>What is Business Analysis – LinkedIn (Jul 2024)</li>
-</ul>
+    <div class="card">
+        <h3>Cancer Detection using ML</h3>
+        <p>Random Forest (92%) and CNN (95%) for early cancer diagnosis.</p>
+    </div>
 </section>
 
 <!-- SKILLS -->
-<section style="background:#f7f7f7;padding:80px 0;">
-<div class="container">
-<h2 class="text-center">Technical Skills</h2>
-<p>
-Python, SQL, n8n, Airflow, Pandas, NumPy, Power BI, Tableau, ML, CNN, YOLOv8,
-OpenAI API, Prompt Engineering, Git, Streamlit, MySQL, PostgreSQL.
-</p>
-</div>
+<section>
+    <h2>Technical Skills</h2>
+    <p>
+        Python, SQL, n8n, Airflow, Pandas, NumPy, Power BI, Tableau, ML, CNN, YOLOv8,
+        OpenAI API, Prompt Engineering, Git, MySQL, PostgreSQL
+    </p>
 </section>
 
-<!-- CONTACT -->
-<section class="container" style="padding:80px 0;text-align:center;">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:dhruvdarshil415@gmail.com">dhruvdarshil415@gmail.com</a></p>
-<p>Phone: +91 97121-63417</p>
-<p>
-LinkedIn: <a target="_blank" href="https://linkedin.com/in/darshil-dhruv-3ab6552bb">
-linkedin.com/in/darshil-dhruv-3ab6552bb</a>
-</p>
-<p>
-GitHub: <a target="_blank" href="https://github.com/Darshil1901">
-github.com/Darshil1901</a>
-</p>
-</section>
+<!-- FOOTER -->
+<footer>
+    © 2025 Darshil Dhruv • Ahmedabad, India
+</footer>
 
 </body>
 </html>
