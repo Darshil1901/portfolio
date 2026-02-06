@@ -19705,6 +19705,82 @@ body.white-version .rn-btn-ulderline {
   color: var(--color-white) !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+/* ================= BLACK PROFESSIONAL THEME OVERRIDE ================= */
+
+/* Backgrounds */
+body{
+    background:#0b0f14 !important;
+    color:#e5e7eb !important;
+}
+
+.rn-slider-area,
+.rn-service-area,
+.rn-portfolio-area,
+.rn-resume-area,
+.rn-testimonial-area,
+.rn-contact-area{
+    background:#0f172a !important;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6,
+.section-title .title,
+.section-title .subtitle{
+    color:#ffffff !important;
+}
+
+/* Paragraphs */
+p{
+    color:#cbd5e1 !important;
+}
+
+/* Cards */
+.rn-service,
+.rn-portfolio,
+.resume-single-list,
+.testimonial{
+    background:#111827 !important;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    transition:0.3s;
+}
+
+.rn-service:hover,
+.rn-portfolio:hover{
+    transform:translateY(-6px);
+}
+
+/* Replace RED with professional BLUE */
+.theme-gradient,
+.color-lightn,
+.section-title span,
+a:hover{
+    color:#38bdf8 !important;
+}
+
+.rn-btn{
+    background:#2563eb !important;
+    border:none !important;
+    border-radius:6px !important;
+    color:white !important;
+}
+
+/* Social icons */
+.social-share a{
+    color:#38bdf8 !important;
+}
+
+/* Lines and separators */
+hr,
+.separator{
+    border-color:#1f2937 !important;
+}
+
+/* Remove any light backgrounds */
+.bg-white,
+.bg-light{
+    background:#0f172a !important;
+}
 
 
 
