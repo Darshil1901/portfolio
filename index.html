@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Darshil Dhruv | Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Darshil Dhruv | Data Scientist</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#0b0f14;color:#e5e7eb;scroll-behavior:smooth}
-section{padding:90px 20px;text-align:center}
+.container{width:90%;max-width:1200px;margin:auto}
+section{padding:90px 0}
+h1,h2,h3{color:#fff}
+h2{margin-bottom:40px;text-align:center;color:#38bdf8}
+p{color:#cbd5e1;line-height:1.7}
+.btn{display:inline-block;padding:12px 28px;border-radius:6px;text-decoration:none;margin:10px;font-weight:600;color:#fff}
+.btn-blue{background:#2563eb}
+.btn-orange{background:#f59e0b}
 .hero{
     background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
-    padding:130px 20px;
+    text-align:center;
+    padding:140px 20px;
 }
-.hero h1{font-size:56px}
-.hero p{max-width:900px;margin:25px auto;line-height:1.8;color:#cbd5e1}
-.btn{
-    padding:12px 28px;
-    border-radius:6px;
-    text-decoration:none;
-    margin:10px;
-    display:inline-block;
-    color:white;
-    font-weight:600;
-}
-.btn-resume{background:#f59e0b}
-.btn-project{background:#2563eb}
-.social a{margin:0 10px;font-size:24px;color:white}
-.title{font-size:36px;margin-bottom:40px;color:#38bdf8}
+.social a{margin:0 10px;color:white;font-size:22px}
+.grid{display:grid;gap:25px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .card{
     background:#111827;
-    max-width:900px;
-    margin:20px auto;
-    padding:25px;
     border-radius:10px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.5);
-    text-align:left;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+    transition:0.3s;
 }
-.testimonial{
-    background:#1f2937;
-    padding:25px;
-    margin:20px auto;
-    border-radius:10px;
-    max-width:800px;
-}
-footer{
-    background:#0f172a;
-    color:white;
-    padding:30px;
-}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-content{padding:20px}
+.testimonial{background:#1f2937;padding:25px;border-radius:10px;margin:20px 0}
+footer{background:#0f172a;text-align:center;padding:30px;margin-top:40px}
 </style>
 </head>
 
@@ -59,102 +46,99 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Hi, I’m Darshil Dhruv</h1>
-    <h3>Data Scientist • Gen AI Engineer • Automation Expert</h3>
+    <div class="container">
+        <h1>Hi, I’m Darshil Dhruv</h1>
+        <h3>Data Scientist • Gen AI Engineer • Automation Expert</h3>
+        <p>
+            I build AI systems, ML models and automation workflows that solve real-world problems
+            using Python, Machine Learning and Generative AI.
+        </p>
 
-    <p>
-        I build AI systems, machine learning models, automation workflows and data-driven solutions
-        that solve real-world problems using Python, ML, GenAI and Data Engineering.
-    </p>
+        <a href="assets/resume/Darshil_Dhruv_Resume.pdf" target="_blank" class="btn btn-orange">Download Resume</a>
+        <a href="#projects" class="btn btn-blue">View Projects</a>
 
-    <a href="assets/resume/Darshil_Dhruv_Resume.pdf" target="_blank" class="btn btn-resume">Download Resume</a>
-    <a href="#projects" class="btn btn-project">View Projects</a>
-
-    <div class="social">
-        <a href="https://linkedin.com/in/darshil-dhruv-3ab6552bb" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="social" style="margin-top:20px">
+            <a href="https://linkedin.com/in/darshil-dhruv-3ab6552bb" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
 </section>
 
-<!-- WHAT I DO -->
+<!-- SERVICES -->
 <section>
-    <h2 class="title">What I Do</h2>
-
-    <div class="card">
-        <h3>AI Systems & Machine Learning</h3>
-        <p>Building ML models for prediction, classification and real-world problem solving.</p>
-    </div>
-
-    <div class="card">
-        <h3>Automation & Workflows</h3>
-        <p>Creating automated workflows using n8n, APIs and Python to optimize business processes.</p>
-    </div>
-
-    <div class="card">
-        <h3>Ed-Tech Instructor — KCG Gujarat</h3>
-        <p>Teaching Python, AI and ML to non-technical students and faculty across Gujarat colleges.</p>
+    <div class="container">
+        <h2>What I Do</h2>
+        <div class="grid grid-3">
+            <div class="card"><div class="card-content"><h3>AI Systems & ML</h3><p>Prediction, classification and real-world ML solutions.</p></div></div>
+            <div class="card"><div class="card-content"><h3>Automation & n8n</h3><p>Workflow automation using APIs and Python.</p></div></div>
+            <div class="card"><div class="card-content"><h3>Ed-Tech Instructor</h3><p>Teaching Python, AI & ML across Gujarat colleges (KCG).</p></div></div>
+        </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2 class="title">Projects</h2>
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="grid grid-3">
 
-    <div class="card">
-        <h3>DriveGuard AI — Intelligent Driver Safety</h3>
-        <p>YOLOv8, OpenCV and CNN detecting drowsiness, seatbelt and phone usage.</p>
-    </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0" alt="">
+                <div class="card-content">
+                    <h3>DriveGuard AI</h3>
+                    <p>YOLOv8 based intelligent driver monitoring system.</p>
+                </div>
+            </div>
 
-    <div class="card">
-        <h3>Generative AI Resume Builder</h3>
-        <p>OpenAI API + Streamlit creating job-specific resumes using prompt engineering.</p>
-    </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+                <div class="card-content">
+                    <h3>Generative AI Resume Builder</h3>
+                    <p>OpenAI + Streamlit resume generator using prompts.</p>
+                </div>
+            </div>
 
-    <div class="card">
-        <h3>Cancer Detection using ML</h3>
-        <p>Random Forest and CNN models for early cancer diagnosis.</p>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d" alt="">
+                <div class="card-content">
+                    <h3>Cancer Detection ML</h3>
+                    <p>Random Forest & CNN for early detection.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section>
-    <h2 class="title">Experience</h2>
-
-    <div class="card">
-        <h3>Academic Consultant — KCG Gujarat (2025-Present)</h3>
-        <p>Teaching Python, AI and ML to colleges like Gujarat Commerce College and GCC Naroda.</p>
-    </div>
-
-    <div class="card">
-        <h3>Junior Data Analyst — Devoted Infotech</h3>
-        <p>n8n automation, APIs, ML forecasting models, dashboards and SQL pipelines.</p>
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="testimonial">
+            <h3>Academic Consultant — KCG Gujarat</h3>
+            <p>Teaching Python, AI and ML to non-technical students and faculty.</p>
+        </div>
+        <div class="testimonial">
+            <h3>Junior Data Analyst — Devoted Infotech</h3>
+            <p>Automation, ML forecasting, dashboards and SQL pipelines.</p>
+        </div>
     </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section>
-    <h2 class="title">Testimonials</h2>
-
-    <div class="testimonial">
-        <p>“Darshil’s Python and AI training made complex topics easy for non-technical students.”</p>
-        <strong>Faculty Coordinator — Gujarat Commerce College</strong>
-    </div>
-
-    <div class="testimonial">
-        <p>“His automation and ML forecasting significantly improved our business workflows.”</p>
-        <strong>Manager — Devoted Infotech</strong>
-    </div>
-
-    <div class="testimonial">
-        <p>“The way Darshil teaches AI tools helped us apply technology directly in our own fields.”</p>
-        <strong>Student Feedback — KCG Program</strong>
+    <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonial">“Darshil’s AI teaching made complex topics easy for students.”</div>
+        <div class="testimonial">“His automation skills improved our business processes.”</div>
+        <div class="testimonial">“Great mentor for Python and AI tools.”</div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section>
-    <h2 class="title">Contact</h2>
-    <div class="card">
+    <div class="container">
+        <h2>Contact</h2>
         <p>Darshil Dhruv — Ahmedabad, India</p>
         <p>Email: dhruvdarshil415@gmail.com</p>
     </div>
